@@ -1,0 +1,89 @@
+* {
+    font-family: Plus Jakarta Sans;
+}
+
+.HP img {
+    box-shadow: 0px 0px 5px 3px rgb(72, 72, 72)!important;
+}
+
+.sosmed i {
+    transition: 0.3s;
+}
+
+.sosmed i:hover {
+    color: rgb(255, 196, 0);
+}
+
+.navigasi {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+}
+
+.navigasi ul li a {
+    font-weight: 600;
+    text-decoration: none !important;
+    color: black;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(39, 39, 39, 0);
+}
+
+.navigasi ul li a:hover {
+    color: rgb(39, 39, 39);
+   border-bottom: 2px solid rgb(255, 196, 0);
+}
+
+.about img {
+    width: 320px;
+    float: left;
+    box-shadow: -30px -30px;
+    margin-right: 25px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.about img:hover {
+    transform: scale(1.02) !important;
+}
+
+.progress-bar.custom-color1 {
+    background-color: rgb(221, 75, 36);
+}
+
+.progress-bar.custom-color2 {
+    background-color: rgb(36, 75, 220);
+}
+
+.progress-bar.custom-color3 {
+    background-color: rgb(77, 88, 142);
+}
+
+.progress-bar.custom-color4 {
+    background-color: rgb(240, 216, 30);
+}
+
+.progress-bar.custom-color5 {
+    background-color: black;
+}
+
+.progress-bar.custom-color6 {
+    background-color: rgb(109, 15, 236);
+}
+
+.progress-bar.custom-color7 {
+    background-color: rgb(21, 184, 199);
+}
+
+.logoprj {
+    transition: 0.2s;
+    color: rgb(35, 37, 38);
+}
+
+.logoprj:hover {
+    color: rgb(255, 196, 0);
+}
