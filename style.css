@@ -3,7 +3,16 @@
 }
 
 .HP img {
-    box-shadow: 0px 0px 5px 3px rgb(72, 72, 72)!important;
+    box-shadow: 0px 0px 5px 3px rgb(72, 72, 72);
+}
+
+.HP {
+    transition: 0.3s;
+    border-radius: 70px !important;
+}
+
+.HP:hover {
+    transform: scale(1.03);
 }
 
 .sosmed i {
