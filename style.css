@@ -36,6 +36,7 @@
 .navigasi ul li a:hover {
     color: rgb(39, 39, 39);
    border-bottom: 2px solid rgb(255, 196, 0);
+   letter-spacing: 0.02rem;
 }
 
 .about img {
