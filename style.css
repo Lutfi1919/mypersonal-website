@@ -3,7 +3,21 @@
 }
 
 .HP img {
-    box-shadow: 0px 0px 5px 3px rgb(72, 72, 72);
+    border-radius: 60% 60% 15% 45%;
+}
+
+.card-text {
+    margin-left: 40px;
+    width: 44ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(44);
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
 }
 
 .HP {
@@ -17,10 +31,25 @@
 
 .sosmed i {
     transition: 0.3s;
+    animation: bounceEffect 0.5s;
+    animation-delay: 2.7s;
+}
+
+@keyframes bounceEffect {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .sosmed i:hover {
     color: rgb(255, 196, 0);
+    transform: translateY(2px)
 }
 
 .navigasi {
@@ -44,8 +73,8 @@
 
 .navigasi ul li a:hover {
     color: rgb(39, 39, 39);
-   border-bottom: 2px solid rgb(255, 196, 0);
-   letter-spacing: 0.02rem;
+    border-bottom: 2px solid rgb(255, 196, 0);
+    letter-spacing: 0.02rem;
 }
 
 .about img {
