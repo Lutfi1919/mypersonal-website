@@ -58,6 +58,7 @@
     }
     50% {
         transform: translateY(-7px);
+        color: rgb(255, 196, 0);
     }
     100% {
         transform: translateY(0);
@@ -70,6 +71,7 @@
     }
     50% {
         transform: translateY(-7px);
+        color: rgb(255, 196, 0);
     }
     100% {
         transform: translateY(0);
@@ -82,9 +84,11 @@
     }
     50% {
         transform: translateX(15px);
+        color: rgb(255, 196, 0);
     }
     75% {
         transform: translateY(-8px);
+        color: rgb(255, 196, 0);
     }
     85% {
         transform: translateY(-4px);
