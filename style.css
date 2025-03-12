@@ -29,13 +29,30 @@
     transform: scale(1.03);
 }
 
-.sosmed i {
-    transition: 0.3s;
-    animation: bounceEffect 0.5s;
-    animation-delay: 2.7s;
+.sosmed i:hover {
+    color: rgb(255, 196, 0);
+    transform: translateY(2px)
 }
 
-@keyframes bounceEffect {
+.sosmed1 {
+    transition: 0.3s;
+    animation: mantul1 0.5s;
+    animation-delay: 2.8s;
+}
+
+.sosmed2 {
+    transition: 0.3s;
+    animation: mantul2 0.5s;
+    animation-delay: 2.9s;
+}
+
+.sosmed3 {
+    transition: 0.3s;
+    animation: mantul3 0.9s;
+    animation-delay: 3s;
+}
+
+@keyframes mantul1 {
     0% {
         transform: translateY(0);
     }
@@ -47,9 +64,34 @@
     }
 }
 
-.sosmed i:hover {
-    color: rgb(255, 196, 0);
-    transform: translateY(2px)
+@keyframes mantul2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mantul3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateY(-8px);
+    }
+    85% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .navigasi {
