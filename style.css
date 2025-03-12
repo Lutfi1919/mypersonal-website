@@ -35,19 +35,19 @@
 }
 
 .sosmed1 {
-    transition: 0.2s;
+    transition: 0.5s;
     animation: mantul1 0.5s;
     animation-delay: 2.8s;
 }
 
 .sosmed2 {
-    transition: 0.2s;
+    transition: 0.5s;
     animation: mantul2 0.5s;
     animation-delay: 2.9s;
 }
 
 .sosmed3 {
-    transition: 0.2s;
+    transition: 0.5s;
     animation: mantul3 0.9s;
     animation-delay: 3s;
 }
