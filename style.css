@@ -8,15 +8,22 @@
 
 .card-text {
     margin-left: 40px;
-    width: 44ch;
+    width: 0ch;
     text-wrap: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(44);
+    visibility: hidden;
+    animation: typing 2s steps(44) forwards;
+    animation-delay: 1s;
 }
 
 @keyframes typing {
-    from {
+    0% {
         width: 0ch;
+        visibility: visible;
+    }
+    100% {
+        width: 44ch;
+        visibility: visible;
     }
 }
 
@@ -182,6 +189,46 @@
 
 .logoprj:hover {
     color: rgb(255, 196, 0);
+}
+
+.S1 {
+    transition: 0.28s;
+}
+
+.S1:hover{
+    transform: translateY(-10px);
+}
+
+.S2 {
+    transition: 0.28s;
+}
+
+.S2:hover{
+    transform: translateY(-10px);
+}
+
+.S3 {
+    transition: 0.28s;
+}
+
+.S3:hover{
+    transform: translateY(-10px);
+}
+
+.S4 {
+    transition: 0.28s;
+}
+
+.S4:hover{
+    transform: translateY(-10px);
+}
+
+.S5 {
+    transition: 0.28s;
+}
+
+.S5:hover{
+    transform: translateY(-10px);
 }
 
 .wave {
