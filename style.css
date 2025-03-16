@@ -36,6 +36,10 @@
     transform: scale(1.03);
 }
 
+.sosmed i {
+    transition: 0.2s
+}
+
 .sosmed i:hover {
     color: rgb(255, 196, 0);
     transform: translateY(2px)
@@ -343,4 +347,4 @@
 .button:hover .button__icon-svg--copy {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
-}  
+}
