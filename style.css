@@ -6,7 +6,7 @@
     border-radius: 60% 60% 15% 45%;
 }
 
-.card-text {
+.CT1 {
     margin-left: 40px;
     width: 0ch;
     text-wrap: nowrap;
@@ -42,7 +42,7 @@
 
 .sosmed i:hover {
     color: rgb(255, 196, 0);
-    transform: translateY(2px)
+    transform: translateY(2px);
 }
 
 .sosmed1 {
@@ -192,6 +192,40 @@
 }
 
 .logoprj:hover {
+    color: rgb(255, 196, 0);
+}
+
+.C-list .C-item {
+    user-select: none;
+    max-width: 400px;
+    transition: 0.3s ease;
+}
+
+.C-list .C-item:hover {
+    transform: scale(1.01);
+}
+
+.C-wrapper {
+    max-width: 1140px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.C-wrapper .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    opacity: 0.8;
+    background: black;
+}
+
+.C-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: rgb(255, 196, 0);
+    box-shadow: 0 0 17px rgba(255, 196, 0, 0.8);
+}
+
+.C-wrapper .swiper-slide-button {
     color: rgb(255, 196, 0);
 }
 

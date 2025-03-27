@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pinyon+Script&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Link CDN Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center min-vh-100 flex-column" id="home" data-aos="fade-down"  data-aos-anchor-placement="top-center">
@@ -19,7 +21,7 @@
             <img src="povbilek.jpg" class="card-img-top mx-auto shadow-lg border border-warning" style="width: 150px;" alt="Foto">
             <div class="card-body">
                 <h5 class="card-title">Luthfi Ahmad Mauludi</h5>
-                <p class="card-text">I am a student at <span style="color: rgb(219, 168, 3);">SMK Wikrama Bogor</span> majoring in <span style="color: rgb(219, 168, 3);">Computer Science</span>.</p>
+                <p class="card-text CT1">I am a student at <span style="color: rgb(219, 168, 3);">SMK Wikrama Bogor</span> majoring in <span style="color: rgb(219, 168, 3);">Computer Science</span>.</p>
                     <p class="sosmed" data-aos="fade-down" data-aos-delay="3000" data-aos-duration="700">
                         <span class="fw-semibold me-2">Find Me On</span>
                         <a href="https://github.com/Lutfi1919" target="_blank" style="color: black;"><i class="fa-brands fa-github fa-xl me-2 sosmed1"></i></a>
@@ -104,15 +106,17 @@
         <h1 class="text-center fw-bold" style="font-family: Montserrat;" id="projects">MY LATEST PROJECTS</h1>
         <p class="mx-auto w-75 text-center mb-5 mt-3">Berikut adalah beberapa projek yang telah saya selesaikan dan saya kan terus belajar lagi agar saya dapat mengembangkan skill saya pada bidang ini.</p>
     </div>
-    <div class="container">
-        <div class="row gx-5 gx-5 gy-3 justify-content-center">
-            <div class="col-sm-6 border rounded-4 shadow pt-3" data-aos="fade-up" data-aos-offset="500" data-aos-duration="800">
-                <img src="Kompeten.png" alt="" width="100%" class="shadow-lg rounded-3">
-                <p class="fw-semibold" style="font-size: 27px; text-align: start; margin-top: 10px;">ATS</p>
-                <p style="text-align: justify;">Proyek ini bertujuan untuk menganalisis dan membandingkan nilai siswa berdasarkan berbagai parameter, seperti mata pelajaran, rata-rata kelas, dan tren peningkatan atau penurunan nilai. Data yang digunakan dapat berupa hasil ujian, tugas, atau aspek lain yang relevan untuk memberikan gambaran yang lebih akurat tentang perkembangan akademik siswa.</p>
-                <!-- From Uiverse.io by Creatlydev --> 
-                    <a href="http://projek-ats.wuaze.com/?i=1" target="_blank">
-                        <button class="button mb-3" style="--clr: #000">
+    <div class="bungkus swiper" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="400">
+        <div class="C-wrapper">
+            <div class="C-list swiper-wrapper">
+                <div class="card C-item swiper-slide shadow rounded rounded-4" style="width: 18rem;">
+                    <img src="Kompeten.png" class="card-img-top rounded-top-4" alt="ATS" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold">ATS</h5>
+                    <p class="card-text" style="text-align: justify;">Proyek ini membandingkan nilai siswa berdasarkan mata pelajaran, rata-rata kelas, dan tren akademik.</p>
+                    </div>
+                    <a class="ms-1" href="http://projek-ats.wuaze.com/?i=1" target="_blank">
+                        <button class="button mb-2" style="--clr: #000; transform: scale(0.8);">
                             <span class="button__icon-wrapper">
                                 <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
                                     <path
@@ -128,14 +132,16 @@
                             Visit Site
                         </button>
                     </a>
-            </div>
-            <div class="col-sm-6 border rounded-4 shadow pt-3" data-aos="fade-up" data-aos-delay="300" data-aos-offset="500" data-aos-duration="600">
-                <img src="sejarah.png" alt="" width="100%" class="shadow-lg rounded-3">
-                <p class="fw-semibold" style="font-size: 27px; text-align: start; margin-top: 10px;">REVOLUSI INDUSTRI</p>
-                <p style="text-align: justify;">Artikel ini membahas tentang Revolusi Industri, mulai dari sejarah, dampaknya terhadap ekonomi dan sosial, hingga peran teknologi dalam transformasi industri. Artikel ini juga mengeksplorasi Revolusi Industri 4.0 dan bagaimana otomatisasi serta kecerdasan buatan mengubah cara manusia bekerja.</p>
-                            <!-- From Uiverse.io by Creatlydev --> 
-                    <a class=" d-flex justify-content-end" href="https://lupinsrevoweb.netlify.app/" target="_blank" style="text-decoration: none;">
-                        <button class="button mt-3" style="--clr: #000">
+                </div>
+
+                <div class="card C-item swiper-slide shadow rounded rounded-4" style="width: 18rem;">
+                    <img src="sejarah.png" class="card-img-top rounded-top-4" alt="REVOLUSI INDUSTRI" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold">REVOLUSI INDUSTRI</h5>
+                    <p class="card-text" style="text-align: justify;">Artikel ini membahas sejarah, dampak, dan peran teknologi dalam Revolusi Industri, termasuk Revolusi Industri 4.0.</p>
+                    </div>
+                    <a class="ms-1" href="https://lupinsrevoweb.netlify.app/" target="_blank">
+                        <button class="button mb-2" style="--clr: #000; transform: scale(0.8);">
                             <span class="button__icon-wrapper">
                                 <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
                                     <path
@@ -151,14 +157,16 @@
                             Visit Site
                         </button>
                     </a>
-            </div>
-            <div class="col-sm-6 border rounded-4 shadow pt-3" data-aos="fade-down" data-aos-offset="450" data-aos-duration="600">
-                <img src="sunda.png" alt="" width="100%" class="shadow-lg rounded-3">
-                <p class="fw-semibold" style="font-size: 27px; text-align: start; margin-top: 10px;">SEJARAH KAMPUNG PULO</p>
-                <p style="text-align: justify;">Artikel ini mengangkat kisah tentang kampung Pulo, baik dari segi sejarah, budaya, kearifan lokal, maupun perkembangan zaman. Artikel ini dapat mencakup kehidupan masyarakat, tradisi yang masih lestari, hingga tantangan yang dihadapi dalam era modern.</p>
-                            <!-- From Uiverse.io by Creatlydev --> 
-                    <a href="https://webtefasunda.netlify.app/" target="_blank">
-                        <button class="button mb-2" style="--clr: #000">
+                </div>
+
+                <div class="card C-item swiper-slide shadow rounded rounded-4" style="width: 18rem;">
+                    <img src="sunda.png" class="card-img-top rounded-top-4" alt="KP. PULO" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold">KAMPUNG PULO</h5>
+                    <p class="card-text" style="text-align: justify;">Artikel ini mengangkat sejarah, budaya, kearifan lokal, dan perkembangan Kampung Pulo.</p>
+                    </div>
+                    <a class="ms-1" href="https://webtefasunda.netlify.app/" target="_blank">
+                        <button class="button mb-2" style="--clr: #000; transform: scale(0.8);">
                             <span class="button__icon-wrapper">
                                 <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
                                     <path
@@ -174,7 +182,62 @@
                             Visit Site
                         </button>
                     </a>
+                </div>
+
+                <div class="card C-item swiper-slide shadow rounded rounded-4" style="width: 18rem;">
+                    <img src="comingsoon.jpeg" class="card-img-top rounded-top-4" alt="COMING SOON" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold">COMING SOON</h5>
+                    <p class="card-text" style="text-align: justify; margin-bottom: 47px;">"Coming soon with something special!"</p>
+                    </div>
+                    <a class="ms-1" href="">
+                        <button class="button mb-2" style="--clr: #000; transform: scale(0.8);">
+                            <span class="button__icon-wrapper">
+                                <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                            Visit Site
+                        </button>
+                    </a>
+                </div>
+
+                <div class="card C-item swiper-slide shadow rounded rounded-4" style="width: 18rem;">
+                    <img src="comingsoon.jpeg" class="card-img-top rounded-top-4" alt="COMING SOON" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold">COMING SOON</h5>
+                    <p class="card-text" style="text-align: justify; margin-bottom: 47px;">"Coming soon with something special!"</p>
+                    </div>
+                    <a class="ms-1" href="">
+                        <button class="button mb-2" style="--clr: #000; transform: scale(0.8);">
+                            <span class="button__icon-wrapper">
+                                <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor">
+                                    </path>
+                                </svg>
+                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                            Visit Site
+                        </button>
+                    </a>
+                </div>
+
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </div>
     </div>
 
@@ -229,7 +292,7 @@
             </div>
         </div>
     <div class="text-center p-2" style="background-color: rgb(86, 89, 94) !important;">
-        <p class="fw-semibold mb-1"><span style="color: rgb(255, 196, 0);">&copy;</span> Luthfi Ahmad Mauludi <span style="color: rgb(255, 196, 0);">|</span> 12410382</p>
+        <p class="fw-semibold mb-1"><marquee behavior="" direction=""><span style="color: rgb(255, 196, 0);">&copy;</span> Luthfi Ahmad Mauludi <span style="color: rgb(255, 196, 0);">|</span> 12410382</marquee></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -239,5 +302,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- Link SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>
