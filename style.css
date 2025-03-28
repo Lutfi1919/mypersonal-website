@@ -129,6 +129,10 @@
     z-index: 1000;
 }
 
+.navigasi ul {
+    margin-top: 10px;
+}
+
 .navigasi ul li a {
     font-weight: 600;
     text-decoration: none !important;
