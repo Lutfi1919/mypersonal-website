@@ -238,43 +238,43 @@
     color: rgb(255, 196, 0);
 }
 
-.S1 {
+.S1 img{
     transition: 0.28s;
 }
 
-.S1:hover{
+.S1 img:hover{
     transform: translateY(-10px);
 }
 
-.S2 {
+.S2 img{
     transition: 0.28s;
 }
 
-.S2:hover{
+.S2 img:hover{
     transform: translateY(-10px);
 }
 
-.S3 {
+.S3 img{
     transition: 0.28s;
 }
 
-.S3:hover{
+.S3 img:hover{
     transform: translateY(-10px);
 }
 
-.S4 {
+.S4 img{
     transition: 0.28s;
 }
 
-.S4:hover{
+.S4 img:hover{
     transform: translateY(-10px);
 }
 
-.S5 {
+.S5 img {
     transition: 0.28s;
 }
 
-.S5:hover{
+.S5 img:hover{
     transform: translateY(-10px);
 }
 
@@ -397,4 +397,22 @@
     justify-content: space-around;
     gap: 50%;
     margin: 20px 20px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 196, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ff4500, #ffaa00);
 }
