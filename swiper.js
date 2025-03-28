@@ -25,5 +25,4 @@ new Swiper('.C-wrapper', {
             slidesPerView: 3
         },
     }
-
 });

@@ -205,8 +205,13 @@
     transition: 0.3s ease;
 }
 
-.C-list .C-item:hover {
-    transform: scale(1.01);
+.C-list .Kcard:hover {
+    transform: scale(1.02, 1.02);
+}
+  
+.C-list:hover > .Kcard:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.93, 0.93);
 }
 
 .C-wrapper {
@@ -279,7 +284,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(wave.png);
+    background: url(Side\ Char/wave.png);
     background-size: 1000px 100px;
 }
 
@@ -385,4 +390,11 @@
 .button:hover .button__icon-svg--copy {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
+}
+
+.footah {
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    margin: 20px 20px;
 }
