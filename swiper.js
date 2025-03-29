@@ -1,3 +1,10 @@
+const burger = document.getElementById("burger");
+const listMenu = document.getElementById("listMenu");
+
+burger.addEventListener("click", () => {
+    listMenu.classList.toggle("hidden");
+})
+
 new Swiper('.C-wrapper', {
     loop: true,
     spaceBetween: 30,

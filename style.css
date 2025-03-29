@@ -120,6 +120,66 @@
     }
 }
 
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
 .navigasi {
     position: sticky;
     top: 0px;
@@ -278,63 +338,7 @@
     transform: translateY(-10px);
 }
 
-.wave {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(Side\ Char/wave.png);
-    background-size: 1000px 100px;
-}
-
-.wave#wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animasiWave 4s linear infinite;
-}
-
-.wave#wave2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animasiWave2 4s linear infinite;
-}
-
-.wave#wave3 {
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animasiWave 3s linear infinite;
-}
-
-.wave#wave4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animasiWave2 3s linear infinite;
-}
-
-@keyframes animasiWave {
-    0% {
-        background-position-x: 1000px;
-    }
-    100% {
-        background-position-x: 0px;
-    }
-}
-
-@keyframes animasiWave2 {
-    0% {
-        background-position-x: 0px;
-    }
-    100% {
-        background-position-x: 1000px;
-    }
-}
-
-/* From Uiverse.io by Creatlydev */ 
+/* From Uiverse.io by Creatlydev  */
 .button {
     line-height: 1;
     text-decoration: none;
@@ -392,6 +396,62 @@
     transform: translate(0);
 }
 
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(Side\ Char/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animasiWave 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animasiWave2 4s linear infinite;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animasiWave 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animasiWave2 3s linear infinite;
+}
+
+@keyframes animasiWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animasiWave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
 .footah {
     display: flex;
     justify-content: space-around;
@@ -415,4 +475,83 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #ff4500, #ffaa00);
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .Head {
+        min-height: 20vh !important;
+    }
+
+    .CT1 {
+        margin-left: 23%;
+        font-size: 10px;
+    }
+
+    .sosmed {
+        font-size: 15px;
+    }
+
+    .navigasi {
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navigasi ul {
+        flex-direction: column !important;
+    }
+
+    .navigasi ul li {
+        margin-bottom: 20px !important;
+        list-style-type: circle;
+    }
+
+    .navigasi ul li a {
+    }
+
+    .navigasi nav.hidden {
+        display: none !important;
+    }
+
+    .burger {
+        z-index: 1000;
+        display: block;
+        position: sticky !important;
+        top: 0 !important;
+        margin-top: 20px !important;
+        margin-left: 84%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 200px;
+        margin-left: 26%;
+        margin-bottom: 10px;
+    }    
+
+    .text-about {
+        text-align: justify;
+        font-size: 14px !important;
+    }
+
+    .textUnik p{
+        margin-left: 22% !important;
+    }
+
+    .footah {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footahUP {
+        margin-bottom: 15px;
+    }
 }

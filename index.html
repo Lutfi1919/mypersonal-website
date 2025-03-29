@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center min-vh-100 flex-column" id="home" data-aos="fade-down"  data-aos-anchor-placement="top-center">
+    <div class="d-flex justify-content-center align-items-center min-vh-100 flex-column Head" id="home" data-aos="fade-down" data-aos-anchor-placement="top-center">
         <div class="card border border-0 text-center HP" style="width: 40rem;">
             <img src="pImages/povbilek.jpg" class="card-img-top mx-auto shadow-lg border border-warning" style="width: 150px;" alt="Foto">
             <div class="card-body">
@@ -30,11 +30,17 @@
                     </p>
             </div>
         </div>
-        <i class="fa-solid fa-arrow-down fa-lg fa-bounce" style="margin-top: 200px;" id="about"></i>
+        <i class="fa-solid fa-arrow-down fa-lg fa-bounce arrw" style="margin-top: 200px;" id="about"></i>
     </div>
-    
-    <div class="navigasi border-bottom" data-aos="fade-down"  data-aos-anchor-placement="top-center">
-        <nav>
+
+        <label class="burger" for="burger" data-aos="fade-up-left" data-aos-offset="500">
+        <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    <div class="navigasi" data-aos="fade-down" data-aos-anchor-placement="top-center">
+        <nav class="hidden" id="listMenu">
             <ul class="d-flex flex-row justify-content-center" style="list-style-type: none;">
                 <li class="px-5"><a href="#home">Luthfi Ahmad M<a></li>
                 <li class="px-5"><a href="#about">About Me<a></li>
@@ -47,7 +53,7 @@
 
     <div class="container mt-5 about">
         <img src="pImages/lutfi.jpg" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
-        <div class="ms-5" data-aos="fade-right" data-aos-offset="350" data-aos-duration="550" data-aos-delay="150">
+        <div class="ms-5 textUnik" data-aos="fade-right" data-aos-offset="350" data-aos-duration="550" data-aos-delay="150">
             <p class="mb-4"><span style="margin-left: 63px;">who am i</span> <span class="fw-bold" style="display: block; font-size: 40px !important; line-height: 0.7; font-family: PT Serif;">H<span style="color: rgb(255, 196, 0); font-family: PT Serif;">É</span>LLO</span></p>
         </div>
         <p class="text-about" style="font-size: large; font-family: Montserrat;" data-aos="fade-right" data-aos-offset="300" data-aos-duration="750" data-aos-delay="150">I am a student who always wants to learn and understand the world. Besides education, I enjoy playing football, both on the field and watching my favorite matches. Music is also an important part of my life, from pop to rock, as inspiration and relaxation. By balancing studying, sports, and personal time, I feel more developed and enjoy every moment. I believe that interests outside of academics play a big role in overall self-development.</p>   
@@ -268,16 +274,16 @@
         </div>
     </div>
 
-        <div class="card border border-0" style="margin-top: 170px;">
+        <div class="card border border-0 Cwave" style="margin-top: 170px;">
             <div class="waves">
                 <div class="wave" id="wave1"></div>
                 <div class="wave" id="wave2"></div>
                 <div class="wave" id="wave3"></div>
                 <div class="wave" id="wave4"></div> 
             </div>
-            <div class="" style="background-color: rgb(75, 78, 85) !important;">
+            <div class="BGfootah" style="background-color: rgb(75, 78, 85);">
                 <div class="container footah">
-                    <div>
+                    <div class="footahUP">
                         <p class="fs-2 fw-bold">LUTHFI AHMAD M</p>
                         <p class="fs-4 fw-semibold" style="color: rgb(255, 196, 0);">Contact Me At</p>
                         <p class="mb-1 text-white">luthfiamad19@gmail.com</p>
@@ -288,11 +294,11 @@
 
                     <div>
                         <p class="fs-2 fw-bold" style="color: rgb(255, 196, 0);">TAUTAN</p>
-                        <a href="#home" style="text-decoration: none; color: white;">Luthfi A M<a><br>
-                        <a href="#about" style="text-decoration: none; color: white;">About Me<a><br>
-                        <a href="#tools" style="text-decoration: none; color: white;">Tools<a><br>
-                        <a href="#projects" style="text-decoration: none; color: white;">Projects<a><br>
-                        <a href="#certificate" style="text-decoration: none; color: white;">Certificate<a>
+                        <a href="#home" style="text-decoration: none; color: white;">Luthfi A M</a><br>
+                        <a href="#about" style="text-decoration: none; color: white;">About Me</a><br>
+                        <a href="#tools" style="text-decoration: none; color: white;">Tools</a><br>
+                        <a href="#projects" style="text-decoration: none; color: white;">Projects</a><br>
+                        <a href="#certificate" style="text-decoration: none; color: white;">Certificate</a>
                     </div>
                 </div>
             </div>
