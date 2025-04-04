@@ -2,7 +2,7 @@ const burger = document.getElementById("burger");
 const listMenu = document.getElementById("listMenu");
 
 burger.addEventListener("click", () => {
-    listMenu.classList.toggle("hidden");
+    listMenu.classList.toggle("menu-active");
 })
 
 new Swiper('.C-wrapper', {

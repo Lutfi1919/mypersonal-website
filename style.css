@@ -2,11 +2,6 @@
     font-family: Plus Jakarta Sans;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 .HP img {
     border-radius: 60% 60% 15% 45%;
 }
@@ -487,26 +482,36 @@ html, body {
 }
 
 @media (max-width: 600px) {
-    body {
-        margin: 0 !important;
-        padding: 0 !important;
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .Head {
         min-height: 20vh !important;
     }
 
+    .HP img {
+        width: 100px !important;
+    }
+
+    .HP h5 {
+        font-size: 15px !important;
+    }
+
     .CT1 {
-        margin-left: 23%;
-        font-size: 10px;
+        margin-left: 18%;
+        font-size: 12px;
     }
 
     .sosmed {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .navigasi {
-        z-index: 999;
+        position: fixed;
+        width: 100%;
+        z-index: 1001;
         padding: 0;
     }
 
@@ -519,43 +524,57 @@ html, body {
         list-style-type: circle;
     }
 
-    .navigasi nav.hidden {
-        display: none !important;
+    #listMenu {
+        max-height: 0;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    #listMenu.menu-active {
+        max-height: 500px;
+        opacity: 1;
     }
 
     .burger {
-        z-index: 1000;
+        z-index: 1002;
         display: block;
-        position: sticky !important;
-        top: 20px !important;
+        position: fixed !important;
+        top: 0px !important;
         margin-top: 20px !important;
-        margin-left: auto;
+        margin-left: 85%;
         margin-right: 20px;
     }
 
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
-
     .about img {
-        width: 200px;
-        margin: 0 auto 10px;
+        width: 180px;
         display: block;
         margin-bottom: 10px;
-    }    
+        margin-left: 30px !important;
+    }
 
     .text-about {
         text-align: justify;
         font-size: 14px !important;
     }
 
-    .textUnik p{
-        margin-left: 22% !important;
+    .tools.shadow {
+        box-shadow: none !important;
     }
 
-    .tools {
-        margin-top: 20px !important;
+    .headProjek .berpro {
+        font-size: 12px !important;
+    }
+
+    .headCertif .berce {
+        font-size: 12px !important;
+    }
+
+    .atasSertif.shadow {
+        box-shadow: none !important;
+    }
+
+    .sertif img {
+        width: 120px;
     }
 
     .footah {
@@ -565,6 +584,14 @@ html, body {
 
     .footahUP {
         margin-bottom: 15px;
+    }
+
+    .footahUP p {
+        font-size: 12px;
+    }
+
+    .linkFooter a {
+        font-size: 12px;
     }
 }
 
