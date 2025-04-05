@@ -513,12 +513,22 @@
     }
 
     .CT1 {
+        width: 44ch;
         margin-left: 18%;
         font-size: 12px;
+        visibility: visible;
+        overflow: none;
+        animation: none;
+    }
+
+    .compSci {
+        display: flex;
+        justify-content: center ;
     }
 
     .sosmed {
         font-size: 12px;
+        margin-top: -20px !important;
     }
 
     .navigasi {
@@ -587,8 +597,14 @@
         box-shadow: none !important;
     }
 
+    .sertif {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 2% !important;
+    }
+
     .sertif img {
-        width: 120px;
+        width: 300px;
     }
 
     .footah {
