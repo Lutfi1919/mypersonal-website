@@ -37,7 +37,7 @@
 }
 
 .sosmed i {
-    transition: 0.2s
+    transition: 0.3s
 }
 
 .sosmed i:hover {
@@ -122,8 +122,8 @@
 
 .burger {
     position: relative;
-    width: 40px;
-    height: 30px;
+    width: 24px;
+    height: 18px;
     background: transparent;
     cursor: pointer;
     display: none;
@@ -136,7 +136,7 @@
 .burger span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background: black;
     border-radius: 9px;
@@ -176,8 +176,8 @@
   
 .burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
+    top: 17px;
+    left: 5px
 }
 
 .navigasi {
@@ -452,15 +452,28 @@
     }
 }
 
+.BGfootah {
+    z-index: 9999;
+}
+
 .footah {
     display: flex;
     justify-content: space-around;
     gap: 50%;
-    margin: 20px 20px;
+    margin: 60px 20px;
 }
 
 .footah p{
     letter-spacing: 0.05em;
+}
+
+.fade-bawah {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 
 ::-webkit-scrollbar {
@@ -513,6 +526,7 @@
         width: 100%;
         z-index: 1001;
         padding: 0;
+        font-size: 15px;
     }
 
     .navigasi ul {
@@ -541,7 +555,7 @@
         position: fixed !important;
         top: 0px !important;
         margin-top: 20px !important;
-        margin-left: 85%;
+        margin-left: 90%;
         margin-right: 20px;
     }
 
