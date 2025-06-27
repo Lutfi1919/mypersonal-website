@@ -255,7 +255,7 @@
     transform: scale(1.02) !important;
 }
 
-.progress-bar.custom-color1 {
+/* .progress-bar.custom-color1 {
     background-color: rgb(221, 75, 36);
 }
 
@@ -281,6 +281,11 @@
 
 .progress-bar.custom-color7 {
     background-color: rgb(21, 184, 199);
+} */
+
+.tools {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
 }
 
 .logoprj {
@@ -615,8 +620,13 @@
         font-size: 14px !important;
     }
 
-    .tools.shadow {
-        box-shadow: none !important;
+    .tools {
+        padding: 20px;
+        font-size: 10px !important;
+    }
+
+    .tools img{
+        height: 15px !important;
     }
 
     .headProjek .berpro {
